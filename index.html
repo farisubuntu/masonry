@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  
+  <style>
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 992px) {
+      body {
+        background-color: white;
+        color: blue;
+      }
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: white;
+        color: green;
+      }
+    }
+
+    @media print and (max-width: 900px) {
+      body {
+        background-color: white;
+        color: brown;
+
+      }
+
+    }
+
+    body {
+      margin: 1%;
+      font-size: 12px;
+      padding: unset;
+
+    }
+
+    hr {
+      all: unset;
+    }
+
+    .col {
+      border: 1px solid black;
+      margin-bottom: 19px;
+    }
+
+    .col-3,
+    .col-9 {
+      border: 2px solid green;
+    }
+
+    p {
+      text-decoration: underline;
+      font-size: 1.3em;
+    }
+
+    textarea {
+      /* width: inherit; */
+      /* height: inherit; */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row top">
+      <div class="col">
+        <div class="parent">
+        <label for="title-editor">Topics/Title:</label>
+        <textarea id='title-editor'></textarea>
+      </div>
+    </div>
+    </div>
+    <div class="row middle">
+      <div class="col-3">
+        <label for="keyword-editor">Keyword/Questions</label>
+        <textarea id='keyword-editor'></textarea>
+      </div>
+      <div class="col-9">
+        <label for="notes-editor">Notes:</label>
+        <p>NOTES:</p><br>
+        <textarea id='notes-editor'></textarea>
+      </div>
+    </div>
+    <div class="row bottom">
+      <div class="col">
+        <p>Summary:</p><br>
+        <textarea id='summary-editor'></textarea>
+      </div>
+    </div>
+  </div> <!-- end of div.conatiner-->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/ace-builds/src-min/ace.js"></script>
+  <script src="bower_components/bootstrap-markdown-editor/dist/js/bootstrap-markdown-editor.js"></script>
+  <script src="/bower_components/woofmark/src/woofmark.js"></script>
+</body>
+
+</html>

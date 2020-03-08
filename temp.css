@@ -1,0 +1,192 @@
+.wk-hide {
+  display: none !important
+}
+
+.wk-container {
+  position: relative
+}
+
+.wk-container-drop {
+  display: none
+}
+
+.wk-container-dragging {
+  display: block
+}
+
+.wk-wysiwyg-placeholder {
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  color: #999
+}
+
+.wk-wysiwyg:empty+.wk-wysiwyg-placeholder {
+  display: block
+}
+
+.wk-prompt {
+  position: fixed;
+  top: 20%;
+  left: 2%;
+  right: 2%;
+  background-color: #dedede;
+  color: #555;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 450px
+}
+
+.wk-prompt-body {
+  text-align: left
+}
+
+.wk-prompt-buttons {
+  text-align: center;
+  margin-top: 20px
+}
+
+.wk-prompt-cancel {
+  margin-right: 10px;
+  cursor: pointer
+}
+
+.wk-prompt-upload {
+  position: relative;
+  overflow: hidden
+}
+
+.wk-prompt-browse {
+  font-weight: 700
+}
+
+.wk-prompt-dragdrop {
+  text-align: center;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px
+}
+
+.wk-prompt-fileupload {
+  position: absolute;
+  top: 0;
+  left: -200%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer
+}
+
+.wk-dragging {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff
+}
+
+.wk-prompt-error {
+  display: none;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .1)
+}
+
+.wk-prompt-error-show {
+  display: block
+}
+
+.wk-prompt-drop,
+.wk-prompt-drop-icon,
+.wk-prompt-progress {
+  display: none
+}
+
+.wk-prompt-upload-dragging .wk-prompt-drop,
+.wk-prompt-upload-dragging .wk-prompt-drop-icon {
+  display: block
+}
+
+.wk-prompt-upload-dragging .wk-prompt-dragdrop {
+  display: none
+}
+
+.wk-prompt-uploading {
+  pointer-events: none
+}
+
+.wk-prompt-uploading .wk-prompt-progress {
+  display: block
+}
+
+.wk-prompt-uploading .wk-prompt-dragdrop,
+.wk-prompt-uploading .wk-prompt-drop {
+  display: none
+}
+
+.wk-prompt-progress {
+  cursor: not-allowed
+}
+
+ /* On screens that are 992px or less, set the background color to blue */
+ @media screen and (max-width: 992px) {
+  body {
+    background-color: white;
+    color: blue;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+    color: green;
+  }
+}
+
+@media print and (max-width: 900px) {
+  body {
+    background-color: white;
+    color: brown;
+
+  }
+
+}
+
+body {
+  margin: 1%;
+  font-size: 12px;
+  padding: unset;
+
+}
+
+hr {
+  all: unset;
+}
+
+.col {
+  border: 1px solid black;
+  margin-bottom: 19px;
+}
+
+.col-3,
+.col-9 {
+  border: 2px solid green;
+}
+
+p {
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+textarea {
+  /* width: inherit; */
+  /* height: inherit; */
+}
